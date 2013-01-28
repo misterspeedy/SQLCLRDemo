@@ -51,8 +51,8 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <PropertyGroup>
-    <PostBuildEvent>SQLCMD -S KIT-PC\SQLEXPRESS2012 -d Words -i "C:\Users\kit\Documents\visual studio 11\Projects\SQLCLRDemo\SQL\configure database.sql"
-SQLCMD -S KIT-PC\SQLEXPRESS2012 -d Words -i "C:\Users\kit\Documents\visual studio 11\Projects\SQLCLRDemo\SQL\create sprocs.sql"</PostBuildEvent>
+    <PostBuildEvent>SQLCMD -S KIT-PC\SQLEXPRESS2012 -d Words -i "..\..\..\SQL\configure database.sql"
+SQLCMD -S KIT-PC\SQLEXPRESS2012 -d Words -i "..\..\..\SQL\create sprocs.sql"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
